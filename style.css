@@ -1,0 +1,60 @@
+@font-face {
+    font-family: font1;
+    src: url(./font/font1.ttf);
+}
+* {
+    margin: 0;
+    padding: 0;
+}
+body {
+    background-image: url(https://static.vecteezy.com/ti/vetor-gratis/p3/2402683-noite-ceu-estrelado-e-nuvens-rosa-amanhecer-gratis-vetor.jpg);
+    background-size: cover;
+}
+h1 {
+    text-align: center;
+    color: #fff;
+    margin: 10px;
+    font-family: font1;
+}
+#imagem {
+    width: 30%;
+    margin-left: 120vh;
+    margin-top: -50vh;
+    color: transparent;
+}
+.cont {
+    display: flex;
+    flex-direction: column;
+    /* background: rgb(64, 71, 49); */
+    width: 35%;
+    margin-top: 21vh;
+    margin-left: 15vh;
+}
+button {
+    width: 35%;
+    margin: 0 auto;
+    margin-top: 10px;
+    border: #333 solid 2px;
+    border-radius: 10px;
+    font-family: font1;
+}
+input {
+    width: 55%;
+    margin: 0 auto;
+    border: #333 solid 2px;
+    border-radius: 4px;
+    font-family: font1;
+}
+#frase {
+    text-align: justify;
+    font-size: 18px;
+    margin: 5vh;
+    color: #fff;
+    font-family: font1;
+}
+footer {
+    background: #1613137b;
+    padding-left: 67vh;
+    margin-top: 38vh;
+    color: #fff;
+}

@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <link rel="icon" href="https://cdn-icons-png.flaticon.com/512/3776/3776970.png">
+    <link rel="stylesheet" href="style.css">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Signos</title>
+</head>
+<body>
+    <div class="cont">
+        <h1>Signos</h1>
+        <input type="text" id="signos">
+        <button onclick="escolhaSigno()">Buscar</button>
+        <div id="frase"></div>
+    </div>
+    <div id="img"><img alt="#" id="imagem"></div>
+    <footer>
+        <h3>Design by Kauã de O. Roldão | roldaokaua@gmail.com</h3>
+    </footer>
+    <script>
+        function escolhaSigno() {
+            var texto
+            var signo = document.getElementById('signos').value;
+            var img = document.getElementById('imagem')
+
+        // function tchau() {
+        //     alert("Tchau!!!!!")
+        // }
+        //     var input = document.querySelector("input");
+        //     input.addEventListener('keypress', function(event){
+        //         if(event.keyCode == 13) {
+        //             event.preventDefault();
+        //             tchau();
+        //         }
+        //     });
+
+            switch(signo) {
+             case "Áries":
+                 texto = "Áries é impaciente, não suporta limites e não costuma se dar bem com ordens e autoridades em geral. No fundo é uma criança desobediente, mas com um bom coração, com a cabeça cheia de ideias de transformar o mundo. No entanto seus humores bem como suas explosões duram pouco. Quase nunca guardam rancor."
+                 img.src = 'https://o.remove.bg/downloads/6f028405-0384-4f6c-9e6c-596b79e16d69/Aries-shutterstock_703869718-removebg-preview.png'
+                 break
+                 
+             case "Touro":
+                 texto = "O signo de Touro é um dos mais tranquilos do Zodíaco, e seus nativos em geral são pessoas muito confiáveis e persistentes."
+                 img.src = 'https://o.remove.bg/downloads/b1af7ed8-e40c-4154-a5f8-59c2d5339d7a/Touro-shutterstock_703869670-removebg-preview.png'
+                     break
+
+             case "Gêmeos":
+                 texto = "Normalmente alegre e bem humorado, a pessoa que tem o sol em Gêmeos costuma ser curioso, ter intensa paixão pelo conhecimento e o genuíno desejo de liberdade. lém de serem pessoas companheiras, os geminianos são muito sociáveis e facilmente fazem amigos."
+                 img.src = 'https://o.remove.bg/downloads/5e28e5bd-89a4-4988-b602-951acbb538b9/Gemeosshutterstock_703869697-removebg-preview.png'
+                     break
+
+             case "Câncer":
+                 texto = "Dóceis, gentis, românticos e carinhosos, são pessoas que se preocupam profundamente com seus amigos, família e lar. Entre suas melhores qualidades estão a sensibilidade e o senso de coletividade. Pertencentes ao grupo do elemento Água, o signo está muito associado à emoção e à intuição."
+                 img.src = 'https://o.remove.bg/downloads/0adaa424-2bdb-4d32-bdd1-c96798aa20bf/Cancer-shutterstock_703869715-removebg-preview.png'
+                     break
+
+             case "Leão":
+                 texto = "Com enorme coração e de sangue quente, os leoninos exalam carisma e generosidade. São pessoas que se sentem responsáveis pelas pessoas que estão ao seu redor e defende-as como um verdadeiro leão. Os nativos do signo podem agir de maneira explosiva e impulsiva, mas sabem perdoar e dificilmente guardam rancor."
+                 img.src = 'https://o.remove.bg/downloads/4d7be799-3cfd-4ce6-a7ff-5cb14b0c1434/Leao-shutterstock_703869742-removebg-preview.png'
+                     break
+
+             case "Virgem":
+                 texto = "As pessoas do signo de Virgem costumam ser inteligentes, detalhistas, metódicas, organizadas, discretas e perfeccionistas."
+                 img.src = 'https://o.remove.bg/downloads/d2d17607-8bb6-435c-a2a2-5acde0ca9be0/Virgem-shutterstock_703869727-removebg-preview.png'
+                     break
+
+             case "Libra":
+                 texto = "Os nativos de Libra são considerados os mais luxuosos e elegantes do zodíaco. Para eles, é como se a vida fosse uma bela e sofisticada obra de arte. Amam a estética das coisas e desfilam elegância por onde passam. Costumam ser pessoas carismáticas, doces, justas, alegres, bem-humoradas e racionais."
+                 img.src = 'https://o.remove.bg/downloads/b2468b35-be69-495e-b321-dce9faa5783d/Libra-shutterstock_703869733-removebg-preview.png'
+                     break
+
+             case "Escorpião":
+                 texto = "Reservados e profundos, os escorpianos têm a intensidade como característica marcante. São pessoas que exalam mistério e poder, e dificilmente deixam-se acessar por completo. Eles vivem no mundo interior das próprias emoções e são extremamente seletivos ao escolher quem poderá adentrar no seu universo."
+                 img.src = 'https://o.remove.bg/downloads/30c55c9c-4e4b-4f8b-98f6-b0292d552981/Escorpiao-shutterstock_703869679-removebg-preview.png'
+                     break
+
+             case "Sagitário":
+                 texto = "As pessoas nascidas sob o signo de Sagitário estão sempre abertas a novas experiências e querendo aprender. Mente aberta e intuitiva, possuem uma personalidade inquieta e mutável. O sagitário é aquela pessoa que gosta de viver e descobrir todas as coisas que o mundo tem a oferecer"
+                 img.src = 'https://o.remove.bg/downloads/770357ab-ec04-4b8c-8a9f-10d7f881e912/Sagitario-removebg-preview.png'
+                     break
+
+             case "Capricórnio":
+                 texto = "Os capricornianos, nascidos no período entre 22 de dezembro e 20 de janeiro, são realistas, determinados, disciplinados, organizados e estão sempre em busca de um lugar no mundo."
+                 img.src = 'https://o.remove.bg/downloads/91ec30f3-6d23-45a0-b16a-8af7a337987b/Capricornio-shutterstock_703869751-removebg-preview.png'
+                     break
+
+             case "Aquário":
+                 texto = "Os aquarianos são pessoas muito diretas e não gostam de trapaças e de coisas feitas por baixo dos panos. Alguns podem achá-los indiferentes ou frios, mas eles apenas mantêm suas emoções mais contidas do que a maioria. Os nativos desse signo têm uma personalidade muito fiel a si mesmo e prezam pela privacidade."
+                 img.src = 'https://o.remove.bg/downloads/90241a89-6c17-444b-9402-4e59a9d36535/Aquario-shutterstock_703869739-removebg-preview.png'
+                     break
+
+             case "Peixes":
+                 texto = "São pessoas sensíveis, sonhadoras, empáticas, pacientes, calmas, intuitivas, românticas, generosas, místicas e amáveis. Captam toda a energia do ambiente como esponjas, o que as leva a sentir muitas coisas que não são suas."
+                 img.src = 'https://o.remove.bg/downloads/8e97b9c2-b159-4681-85fe-1770f440d07d/Peixes-shutterstock_703869703-removebg-preview.png'
+                     break
+
+             default:
+                 texto = "Insira um signo existente"
+            }
+            document.getElementById("frase").innerHTML = texto
+        }
+    </script>
+
+</body>
+</html>
